@@ -113,7 +113,7 @@ class NewsController extends AppController
 				if($save) 
 				{
 					$ID		=	$this->{$this->ModelName}->getLastInsertId();
-					$this->redirect(array("action"=>"SuccessAdd",$ID));
+					$this->redirect(array("action"=>"Index"));
 				}
 			}//END IF VALIDATE
 		}//END IF NOT EMPTY
@@ -153,7 +153,7 @@ class NewsController extends AppController
 				$save =	$this->{$this->ModelName}->save($this->request->data,false);
 				
 				if($save) {
-					$this->redirect(array('action' => 'SuccessEdit', $ID));	
+					$this->redirect(array('action' => 'Index'));	
 				} else {
 					$this->Session->setFlash('Unable to save, please try again');
 				}

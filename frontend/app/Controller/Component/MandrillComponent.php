@@ -6,7 +6,7 @@ class MandrillComponent extends Component
 	private $curlConnection 	= null;
 	
 	private $mandrillUrl		= "https://mandrillapp.com/api/1.0";
-	private $fromEmail			= "noreply@ikk-kubang.com/";
+	private $fromEmail			= "noreply@natlia.com/";
 	private $fromEmailName		= "System";
 	//private $to  				= "7nantungga@gmail.com";
 	//private $to  				= "kopralrhp@gmail.com";
